@@ -697,6 +697,6 @@ a.btn.header-misc__link.header-misc__link--register,
 .sidenav-float__item-link.active {
   border: none !important;
   box-shadow:
-    0 0 12px rgba(255, 45, 55, 0.35),
-    inset 0 1px 0 rgba(255, 255, 255, 0.10) !important;
+    0 0 12px #CC232A,
+    inset 0 1px 0 rgb(255, 255, 255) !important;
 }
