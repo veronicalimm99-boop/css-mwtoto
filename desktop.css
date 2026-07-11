@@ -536,9 +536,13 @@ a.btn.header-misc__link.header-misc__link--register {
 
 #heads.header,
 .header {
-  border: 1px solid rgba(255, 255, 255, 0.55) !important;
-  border-top: 1px solid rgba(255, 255, 255, 0.42) !important;
-  border-bottom: 1px solid rgba(210, 215, 222, 0.78) !important;
+  border: none !important;
+  border-top: none !important;
+  border-right: none !important;
+  border-bottom: none !important;
+  border-left: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 .header .container,
@@ -548,7 +552,9 @@ a.btn.header-misc__link.header-misc__link--register {
 .header__content,
 .header-content,
 .header-container {
-  border: 0 !important;
+  border: none !important;
+  outline: none !important;
+  box-shadow: none !important;
 }
 
 a.btn.header-misc__link.header-misc__link--login,
