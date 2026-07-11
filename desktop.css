@@ -237,7 +237,7 @@ a.btn.header-misc__link.header-misc__link--register {
 
 /* ===== SIDENAV ACTIVE - RED SILVER GLOW ===== */
 .sidenav-float__item-link.active {
-    background: rgba(80, 6, 10, 0.82) !important;
+    background: #CC232A !important;
     border: 1px solid #d8dce3 !important;
 
     box-shadow:
