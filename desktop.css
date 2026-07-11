@@ -1,114 +1,131 @@
-/* DESKTOP + CSS UMUM */
+/* ==================================================
+   MWTOTO DESKTOP 
+================================================== */
+
+:root {
+  --mw-white: #ffffff;
+  --mw-bg: #f5f6f8;
+  --mw-soft: #eef0f3;
+  --mw-silver: #d8dce2;
+  --mw-border: rgba(145, 151, 162, 0.35);
+  --mw-text: #2d3035;
+  --mw-muted: #6f747d;
+  --mw-hover: #e6e8ec;
+  --mw-shadow: rgba(35, 40, 48, 0.12);
+}
+
+/* ===== BODY / BACKGROUND ===== */
+html,
 body {
-    background: #1a0507 !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+body {
+  background: var(--mw-bg) !important;
+  color: var(--mw-text) !important;
 }
 
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  content: "";
+  position: fixed;
+  inset: 0;
 
-    background: url(https://imgstorage.site/view/yuyu/mwtoto-bg.webp) center center no-repeat;
-    background-size: cover;
+  background:
+    radial-gradient(
+      circle at top center,
+      rgba(255, 255, 255, 0.98) 0%,
+      rgba(242, 244, 247, 0.96) 48%,
+      rgba(231, 234, 239, 0.96) 100%
+    );
 
-    z-index: -1;
+  z-index: -1;
+  pointer-events: none;
 }
 
-/* ===== BACKGROUND MOBILE ===== */
-
-
-/* ===== LOADING BAR ===== */  
+/* ===== LOADING BAR ===== */
 .pace .pace-progress {
-    background: transparent !important;
-    background-image: none !important;
-    position: fixed;
-    z-index: 2000;
-    top: 0;
-    right: 100%;
-    width: 100%;
-    height: 2px;
+  position: fixed;
+  z-index: 2000;
+
+  top: 0;
+  right: 100%;
+
+  width: 100%;
+  height: 2px;
+
+  background: #c9cdd4 !important;
+  box-shadow: none !important;
 }
 
-.pace-activity:after {
-    content: "";
-    width: 100%;
-    height: 100%;
-    background: transparent !important;
-    background-image: none !important;
-    position: absolute;
-    animation: none;
-    top: 0;
-    left: 0;
+.pace-activity::after {
+  content: none !important;
+  display: none !important;
 }
 
-/* ===== PAKSA HILANG BANNER SAMPING KIRI-KANAN ===== */
+/* ===== HILANGKAN BANNER SAMPING ===== */
 .splide-home-add,
 .splide-home-add.mb-3,
 .splide-home-add *,
 .splide-home-add::before,
 .splide-home-add::after {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 
-    width: 0 !important;
-    min-width: 0 !important;
-    max-width: 0 !important;
+  width: 0 !important;
+  height: 0 !important;
 
-    height: 0 !important;
-    min-height: 0 !important;
-    max-height: 0 !important;
+  margin: 0 !important;
+  padding: 0 !important;
 
-    margin: 0 !important;
-    padding: 0 !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
 
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-
-    border: none !important;
-    box-shadow: none !important;
-    filter: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-
-    pointer-events: none !important;
+  pointer-events: none !important;
 }
-/* ===== HEADER IMAGE DESKTOP ===== */
+
+/* ===== HEADER DESKTOP ===== */
 #heads.header,
 .header {
-    background: url("https://imgstorage.site/view/yuyu/bg-web-desktop-header.png") center top no-repeat !important;
-    background-size: auto 95px !important;
-    background-color: transparent !important;
+  position: relative !important;
+  z-index: 999 !important;
 
-    min-height: 95px !important;
-    height: 95px !important;
+  min-height: 95px !important;
+  height: 95px !important;
 
-    border: none !important;
-    border-bottom: none !important;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f6f7f9 58%,
+      #e8eaee 100%
+    ) !important;
 
-    box-shadow: none !important;
-    filter: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+  border: 0 !important;
+  border-bottom: 1px solid var(--mw-border) !important;
 
-    position: relative !important;
-    z-index: 999 !important;
+  box-shadow:
+    0 4px 14px rgba(35, 40, 48, 0.08),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+
+  backdrop-filter: none !important;
+  -webkit-backdrop-filter: none !important;
 }
 
-/* jangan kasih tinggi/background ke header-before, biar mobile gak turun */
 .header-before {
-    background: transparent !important;
-    background-image: none !important;
-    min-height: 0 !important;
-    height: 0 !important;
-    margin: 0 !important;
-    padding: 0 !important;
-    border: none !important;
-    box-shadow: none !important;
+  display: none !important;
+
+  height: 0 !important;
+  min-height: 0 !important;
+
+  margin: 0 !important;
+  padding: 0 !important;
+
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 .header .container,
@@ -118,35 +135,19 @@ body::before {
 .header__content,
 .header-content,
 .header-container {
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-
-    border: none !important;
-    border-bottom: none !important;
-
-    box-shadow: none !important;
-    filter: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
-/* ===== HEADER MOBILE - SAMPAI MENU KATEGORI ===== */
-
-/* ===== AREA SLIDER UTAMA JANGAN ADA GRADIENT / HITAM ===== */
+/* ===== SLIDER UTAMA ===== */
 .splide-home-main {
-    width: 100% !important;
-    padding-top: 0 !important;
+  width: 100% !important;
+  padding-top: 0 !important;
 
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-
-    border: none !important;
-    box-shadow: none !important;
-    filter: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+  background: transparent !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
 .splide-home-main::before,
@@ -159,286 +160,389 @@ body::before {
 .splide-home-main .splide__list::after,
 .splide-home-main .splide__slide::before,
 .splide-home-main .splide__slide::after {
-    content: none !important;
-    display: none !important;
+  content: none !important;
+  display: none !important;
 
-    background: transparent !important;
-    background-image: none !important;
-
-    border: none !important;
-    box-shadow: none !important;
-    filter: none !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
 }
 
-/* ===== TOMBOL MASUK / MENU BAR - RED SILVER ===== */
+/* ===== TOMBOL LOGIN / DAFTAR / MENU ===== */
 a.btn.header-misc__link.header-misc__link--login,
 a.btn.header-misc__link.header-misc__link--bar,
 a.btn.header-misc__link.header-misc__link--register,
 .sidebar-button:not(.sidebar-button--transparent) {
-    background: linear-gradient(to bottom, #ff5a5a 0%, #d71920 55%, #7a0508 100%) !important;
-    color: #ffffff !important;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f2f3f5 58%,
+      #dfe2e7 100%
+    ) !important;
 
-    border: 1px solid rgba(230,230,230,0.75) !important;
+  color: var(--mw-text) !important;
 
-    box-shadow:
-        0 3px 0 #bfc4cc,
-        0 0 14px rgba(255,45,55,0.35),
-        inset 0 1px 0 rgba(255,255,255,0.55) !important;
+  border: 1px solid var(--mw-border) !important;
+  border-radius: 8px !important;
+
+  box-shadow:
+    0 3px 8px rgba(40, 45, 52, 0.10),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+
+  font-weight: 500 !important;
+
+  transition:
+    background 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease !important;
 }
 
-/* ===== TOMBOL DAFTAR / LOGIN - RED SILVER ===== */
-.header-misc__link--register span {
-    color: #ffffff !important;
+a.btn.header-misc__link.header-misc__link--login:hover,
+a.btn.header-misc__link.header-misc__link--bar:hover,
+a.btn.header-misc__link.header-misc__link--register:hover,
+.sidebar-button:not(.sidebar-button--transparent):hover {
+  background: #ffffff !important;
+
+  box-shadow:
+    0 5px 12px rgba(40, 45, 52, 0.13),
+    inset 0 1px 0 #ffffff !important;
+
+  transform: translateY(-1px);
 }
 
-a.btn.header-misc__link.header-misc__link--register {
-    background: linear-gradient(0deg, #7a0508 0%, #d71920 58%, #ff6b6b 100%) !important;
-
-    box-shadow:
-        0px -3px 0px 0px #BCC6CC inset,
-        0 4px 12px rgba(255,45,55,0.35),
-        inset 0 1px 0 rgba(255,255,255,0.45) !important;
-
-    color: #ffffff !important;
-    border: 1px solid rgba(230,230,230,0.75) !important;
+.header-misc__link--register span,
+.sidebar-button:not(.sidebar-button--transparent) span {
+  color: var(--mw-text) !important;
+  font-weight: 500 !important;
 }
 
-/* ===== HEADER MENU - RED SILVER ===== */
+.sidebar-button:not(.sidebar-button--transparent)
+span:not(.sidebar-button__icon) {
+  background: none !important;
+  -webkit-text-fill-color: var(--mw-text) !important;
+}
+
+/* ===== HEADER CATEGORY MENU ===== */
 .header-category__menu-item-link,
 .user-referral__menu-item-link,
 .game-promotions__menu-item-link,
 .user-transactions__menu-item-link,
 .my-favorite__menu-item-link {
-    background: linear-gradient(to bottom, #ff5a5a 0%, #b80d14 100%) !important;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #eceef1 100%
+    ) !important;
 
-    border: 1px solid rgba(230,230,230,0.65) !important;
+  color: var(--mw-text) !important;
 
-    box-shadow:
-        inset 0 1px 0 rgba(255,255,255,0.35),
-        0 0 8px rgba(255,45,55,0.25) !important;
+  border: 1px solid rgba(150, 155, 165, 0.28) !important;
+
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.95),
+    0 2px 6px rgba(35, 40, 48, 0.06) !important;
+
+  font-weight: 500 !important;
 }
 
-/* ===== TOMBOL UTAMA - GLOSSY RED SILVER ===== */
-.sidebar-button:not(.sidebar-button--transparent) {
-    background: linear-gradient(to top, #7a0508 0%, #d71920 60%, #ff6b6b 100%) !important;
-
-    box-shadow:
-        0 3px 0 0 #cfd3da,
-        0 0 12px rgba(255,45,55,0.30),
-        inset 0 1px 0 rgba(255,255,255,0.45) !important;
-
-    color: #fff !important;
-    border: 1px solid rgba(230,230,230,0.65) !important;
-}
-
-.sidebar-button:not(.sidebar-button--transparent) span:not(.sidebar-button__icon) {
-    background-image: linear-gradient(180deg, rgba(255,255,255,0.92), rgba(255,255,255,1)) !important;
-}
-
-/* ===== SIDENAV ACTIVE - RED SILVER GLOW ===== */
+/* ===== SIDENAV ACTIVE ===== */
 .sidenav-float__item-link.active {
-    background: rgba(80, 6, 10, 0.82) !important;
-    border: 1px solid #d8dce3 !important;
+  background: rgba(255, 255, 255, 0.94) !important;
 
-    box-shadow:
-        0 0 16px rgba(255,45,55,0.45),
-        inset 0 1px 0 rgba(255,255,255,0.12) !important;
+  border: 1px solid rgba(125, 132, 143, 0.45) !important;
+
+  box-shadow:
+    0 4px 12px rgba(40, 45, 52, 0.12),
+    inset 0 1px 0 #ffffff !important;
 }
 
 .sidenav-float__item-link.active,
 .sidenav-float__item-link.active *,
 .sidenav-float__item-link.active span,
 .sidenav-float__item-link.active i {
-    color: #f1f3f6 !important;
+  color: #34383e !important;
+  font-weight: 500 !important;
 }
 
 .sidenav-float__item-link.active svg,
 .sidenav-float__item-link.active svg *,
 .sidenav-float__item-link.active path,
 .sidenav-float__item-link.active circle {
-    fill: #f1f3f6 !important;
-    stroke: #f1f3f6 !important;
+  fill: #545a63 !important;
+  stroke: #545a63 !important;
 }
 
-/* ===== GRADIENT TEXT - RED SILVER ===== */
+/* ===== GRADIENT TEXT ===== */
 .gradient-text {
-    background: linear-gradient(to bottom, #ffffff 10%, #d8dce3 45%, #ff4a4a 100%) !important;
-    -webkit-background-clip: text !important;
-    background-clip: text !important;
+  background:
+    linear-gradient(
+      180deg,
+      #20242a 0%,
+      #5e646d 58%,
+      #8d939c 100%
+    ) !important;
+
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+
+  color: transparent !important;
+  font-weight: 500 !important;
 }
 
-/* ===== SELECT2 DROPDOWN ===== */
-.select2-container--default .select2-selection--single .select2-selection__rendered {
-    color: #f1f3f6 !important;
+/* ===== SELECT2 ===== */
+.select2-container--default
+.select2-selection--single {
+  background: #ffffff !important;
+  border: 1px solid var(--mw-border) !important;
 }
 
-.select2-container--default .select2-selection--single .select2-selection__arrow b {
-    border-color: #f1f3f6 transparent transparent transparent !important;
+.select2-container--default
+.select2-selection--single
+.select2-selection__rendered {
+  color: var(--mw-text) !important;
+  font-weight: 400 !important;
 }
 
-.select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: rgba(215,25,32,0.28) !important;
-    color: #ffffff !important;
+.select2-container--default
+.select2-selection--single
+.select2-selection__arrow b {
+  border-color:
+    #656b74 transparent transparent transparent !important;
 }
 
-.select2-container--default .select2-results__option--selected,
-.select2-container--default .select2-results__option[aria-selected=true] {
-    background-color: rgba(215,25,32,0.34) !important;
+.select2-container--default
+.select2-results__option--highlighted[aria-selected] {
+  background: #e7e9ed !important;
+  color: #25282d !important;
 }
 
-/* ===== BADGE PROVIDER BORDER ===== */
+.select2-container--default
+.select2-results__option--selected,
+.select2-container--default
+.select2-results__option[aria-selected="true"] {
+  background: #dde0e5 !important;
+  color: #25282d !important;
+}
+
+/* ===== BADGE PROVIDER ===== */
 .content-provider__item-img-wrapper.category-green::before,
 .category-green::before {
-    background: linear-gradient(to bottom, rgba(230,230,230,1) 15%, rgba(255,45,55,0.45) 55%, rgba(230,230,230,0) 100%) !important;
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.95) 0%,
+      rgba(188, 193, 201, 0.55) 55%,
+      transparent 100%
+    ) !important;
 }
 
 .content,
 .content__container {
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
-
-    box-shadow: none !important;
-    filter: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
 }
 
-
-/* ===== CONTENT PAGE HEADER - RED SILVER ===== */
+/* ===== CONTENT PAGE HEADER ===== */
 .content-page__header {
-    width: 100%;
-    position: relative;
-    border-radius: 20px 20px 0 0;
-    display: flex;
-    justify-content: space-between;
+  position: relative;
+  width: 100%;
 
-    background:
-        linear-gradient(
-            180deg,
-            rgba(255,255,255,0.38) 0%,
-            rgba(210,215,222,0.18) 12%,
-            rgba(255,74,74,0.92) 38%,
-            rgba(184,13,20,0.95) 68%,
-            rgba(75,3,7,0.98) 100%
-        ) !important;
+  display: flex;
+  justify-content: space-between;
 
-    border: 1px solid rgba(220,225,232,0.75) !important;
-    border-bottom: 1px solid rgba(245,245,245,0.85) !important;
+  border-radius: 16px 16px 0 0;
 
-    box-shadow:
-        0 0 14px rgba(255,45,55,0.30),
-        inset 0 1px 0 rgba(255,255,255,0.65),
-        inset 0 -1px 0 rgba(180,185,195,0.55),
-        inset 0 0 0 1px rgba(255,255,255,0.12) !important;
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #f4f5f7 52%,
+      #e3e6ea 100%
+    ) !important;
+
+  border: 1px solid var(--mw-border) !important;
+  border-bottom: 1px solid rgba(130, 136, 146, 0.38) !important;
+
+  box-shadow:
+    0 4px 12px rgba(40, 45, 52, 0.08),
+    inset 0 1px 0 #ffffff !important;
+
+  color: var(--mw-text) !important;
+}
+
+.content-page__header *,
+.content-page__header h1,
+.content-page__header h2,
+.content-page__header h3,
+.content-page__header span {
+  color: var(--mw-text) !important;
+  font-weight: 500 !important;
 }
 
 .content-page__header--alt {
-    background: rgba(122, 5, 8, 0.82) !important;
-    padding-top: 8px;
-    padding-bottom: 8px;
-    padding-left: 24px;
-    padding-right: 24px;
-    border: 1px solid rgba(230,230,230,0.35) !important;
+  padding: 8px 24px;
+
+  background: #f2f3f5 !important;
+
+  border: 1px solid var(--mw-border) !important;
 }
 
-/* ===== CONTENT PAGE - TETAP GLASS, TAPI TIDAK GANGGU SLIDER ===== */
+/* ===== CONTENT PAGE ===== */
 .content-page {
-    color: #fff;
-    background: rgba(105, 8, 12, 0.56) !important;
+  position: relative;
 
-    border: 1px solid rgba(230,230,230,0.55) !important;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
 
-    box-shadow:
-        0 0 22px rgba(255,45,55,0.28),
-        inset 0 1px 0 rgba(255,255,255,0.18),
-        inset 0 0 0 1px rgba(255,255,255,0.06) !important;
+  width: 100%;
 
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
+  margin-bottom: 24px;
 
-    width: 100%;
-    border-radius: 20px;
-    margin-bottom: 24px;
-    position: relative;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
+  color: var(--mw-text) !important;
+
+  background:
+    rgba(255, 255, 255, 0.90) !important;
+
+  border: 1px solid var(--mw-border) !important;
+  border-radius: 16px;
+
+  box-shadow:
+    0 8px 24px rgba(35, 40, 48, 0.09),
+    inset 0 1px 0 rgba(255, 255, 255, 0.95) !important;
+
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
 }
 
-/* ===== FOOTER - GLASS RED SILVER BLUR ===== */
+.content-page p,
+.content-page li,
+.content-page td,
+.content-page label {
+  color: #4b5058 !important;
+  font-weight: 400 !important;
+}
+
+.content-page h1,
+.content-page h2,
+.content-page h3,
+.content-page h4,
+.content-page strong {
+  color: #292d32 !important;
+  font-weight: 500 !important;
+}
+
+/* ===== FOOTER ===== */
 .footer {
-    background: rgba(80, 6, 10, 0.52) !important;
-    border-top: 1px solid rgba(230,230,230,0.48) !important;
+  background:
+    rgba(255, 255, 255, 0.92) !important;
 
-    box-shadow:
-        0 -4px 22px rgba(255,45,55,0.24),
-        inset 0 1px 0 rgba(255,255,255,0.10) !important;
+  border-top:
+    1px solid rgba(145, 151, 162, 0.32) !important;
 
-    backdrop-filter: blur(8px) !important;
-    -webkit-backdrop-filter: blur(8px) !important;
+  box-shadow:
+    0 -5px 18px rgba(40, 45, 52, 0.07),
+    inset 0 1px 0 #ffffff !important;
+
+  backdrop-filter: blur(5px) !important;
+  -webkit-backdrop-filter: blur(5px) !important;
+
+  color: var(--mw-text) !important;
 }
 
-/* ===== MARQUEE - RED SILVER BAR ===== */
+.footer *,
+.footer p,
+.footer span,
+.footer a {
+  color: #50555d !important;
+  font-weight: 400 !important;
+}
+
+/* ===== MARQUEE ===== */
 .marquee {
-    background: linear-gradient(90deg, #f8d3d3 0%, #ff5a5a 35%, #d71920 70%, #8a060a 100%) !important;
-    color: #ffffff !important;
+  position: relative;
 
-    font-size: 17px;
-    font-weight: bold;
+  width: 100%;
 
-    position: relative;
-    width: 100%;
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
+  margin-top: 20px;
 
-    border-radius: 5px;
-    margin-top: 20px;
+  overflow: hidden;
 
-    box-shadow:
-        0 0 18px rgba(255,45,55,0.42),
-        inset 0 1px 0 rgba(255,255,255,0.45) !important;
+  color: #34383e !important;
 
-    border: 1px solid rgba(230,230,230,0.65) !important;
+  font-size: 16px;
+  font-weight: 500 !important;
+
+  white-space: nowrap;
+  text-overflow: ellipsis;
+
+  background:
+    linear-gradient(
+      90deg,
+      #ffffff 0%,
+      #eef0f3 50%,
+      #dfe2e7 100%
+    ) !important;
+
+  border:
+    1px solid rgba(135, 141, 151, 0.38) !important;
+
+  border-radius: 6px;
+
+  box-shadow:
+    0 3px 10px rgba(40, 45, 52, 0.08),
+    inset 0 1px 0 #ffffff !important;
 }
 
-/* ===== KOTAK ICON PROVIDER - RED GLASS SILVER BORDER ===== */
+/* ===== PROVIDER CARD ===== */
 .content-provider__item {
-    background: rgba(30, 5, 7, 0.48) !important;
-    border-radius: 12px !important;
-    border: 1px solid rgba(230,230,230,0.36) !important;
+  background:
+    rgba(255, 255, 255, 0.88) !important;
 
-    box-shadow:
-        0 0 12px rgba(255,45,55,0.18),
-        inset 0 1px 0 rgba(255,255,255,0.08) !important;
+  border:
+    1px solid rgba(145, 151, 162, 0.30) !important;
+
+  border-radius: 12px !important;
+
+  box-shadow:
+    0 4px 12px rgba(40, 45, 52, 0.07),
+    inset 0 1px 0 #ffffff !important;
 }
 
 .content-provider__item-link {
-    background: transparent !important;
+  background: transparent !important;
 }
 
 .content-provider__item-img-wrapper {
-    background: rgba(0, 0, 0, 0.28) !important;
-    border-radius: 50% !important;
-    border: 1px solid rgba(230,230,230,0.28) !important;
+  background:
+    rgba(238, 240, 243, 0.92) !important;
+
+  border:
+    1px solid rgba(145, 151, 162, 0.25) !important;
+
+  border-radius: 50% !important;
 }
 
-/* ===== FOOTER PARTNER/PAYMENT - RED GLASS SILVER ===== */
+/* ===== FOOTER PARTNER / PAYMENT ===== */
 .footer-partner--item-img,
 .footer-payments--item {
-    background: rgba(255,255,255,0.08) !important;
-    border: 1px solid rgba(230,230,230,0.38) !important;
+  background:
+    rgba(255, 255, 255, 0.90) !important;
 
-    box-shadow:
-        0 0 10px rgba(255,45,55,0.16),
-        inset 0 1px 0 rgba(255,255,255,0.12) !important;
+  border:
+    1px solid rgba(145, 151, 162, 0.28) !important;
 
-    backdrop-filter: blur(6px) !important;
-    -webkit-backdrop-filter: blur(6px) !important;
+  box-shadow:
+    0 3px 9px rgba(40, 45, 52, 0.07),
+    inset 0 1px 0 #ffffff !important;
+
+  backdrop-filter: blur(4px) !important;
+  -webkit-backdrop-filter: blur(4px) !important;
 }
 
-/* ===== PAKSA HILANG BACKGROUND GELAP / RADIAL BAWAAN ===== */
+/* ===== HILANGKAN RADIAL BAWAAN ===== */
 .content-background-radial-bg,
 .content-background-radial,
 .content-background-radial__subtract,
@@ -449,83 +553,231 @@ a.btn.header-misc__link.header-misc__link--register {
 .content-background-radial::after,
 .content-background-radial__subtract::before,
 .content-background-radial__subtract::after {
-    display: none !important;
-    visibility: hidden !important;
-    opacity: 0 !important;
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
 
-    background: transparent !important;
-    background-color: transparent !important;
-    background-image: none !important;
+  background: none !important;
+  border: 0 !important;
+  box-shadow: none !important;
 
-    border: none !important;
-    box-shadow: none !important;
-    filter: none !important;
-    backdrop-filter: none !important;
-    -webkit-backdrop-filter: none !important;
-
-    pointer-events: none !important;
+  pointer-events: none !important;
 }
 
-/* ===== MENU CEPAT MWTOTO - DESKTOP ===== */
+/* ==================================================
+   MENU CEPAT MWTOTO — WHITE DESKTOP
+================================================== */
+
 #mwtotoSocialMenu.mwtoto-social {
   position: fixed !important;
   z-index: 2147483647 !important;
+
   left: 18px !important;
   bottom: 145px !important;
+
   width: 330px !important;
   max-width: 330px !important;
   max-height: 70vh !important;
+
   display: block !important;
+
   overflow-x: hidden !important;
   overflow-y: auto !important;
-  padding: 16px !important;
+
   margin: 0 !important;
-  background: linear-gradient(180deg, rgba(125,5,12,.98) 0%, rgba(35,2,5,.99) 100%) !important;
-  border: 1px solid rgba(255,255,255,.65) !important;
-  border-radius: 18px !important;
-  box-shadow: 0 0 28px rgba(255,0,20,.55), inset 0 1px 0 rgba(255,255,255,.20) !important;
+  padding: 16px !important;
+
+  background:
+    rgba(255, 255, 255, 0.97) !important;
+
+  border:
+    1px solid rgba(130, 136, 146, 0.38) !important;
+
+  border-radius: 16px !important;
+
+  box-shadow:
+    0 10px 30px rgba(35, 40, 48, 0.17),
+    inset 0 1px 0 #ffffff !important;
+
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
+
   transform: translateX(-115%) !important;
-  transition: transform .35s ease, opacity .35s ease, visibility .35s ease !important;
+
+  transition:
+    transform 0.30s ease,
+    opacity 0.30s ease,
+    visibility 0.30s ease !important;
 }
+
 #mwtotoSocialMenu.mwtoto-social.mwtoto-open {
   opacity: 1 !important;
   visibility: visible !important;
   pointer-events: auto !important;
   transform: translateX(0) !important;
 }
-#mwtotoSocialMenu h3 { margin:0 0 5px !important; color:#fff !important; font-size:20px !important; font-weight:800 !important; }
-#mwtotoSocialMenu > p { margin:0 0 14px !important; color:rgba(255,255,255,.75) !important; font-size:13px !important; }
-#mwtotoSocialMenu ul { list-style:none !important; margin:0 !important; padding:0 !important; }
-#mwtotoSocialMenu ul li { margin:0 0 10px !important; padding:0 !important; }
+
+#mwtotoSocialMenu h3 {
+  margin: 0 0 5px !important;
+
+  color: #272b30 !important;
+
+  font-size: 19px !important;
+  font-weight: 500 !important;
+}
+
+#mwtotoSocialMenu > p {
+  margin: 0 0 14px !important;
+
+  color: #747a83 !important;
+
+  font-size: 13px !important;
+  font-weight: 400 !important;
+}
+
+#mwtotoSocialMenu ul {
+  margin: 0 !important;
+  padding: 0 !important;
+
+  list-style: none !important;
+}
+
+#mwtotoSocialMenu ul li {
+  margin: 0 0 9px !important;
+  padding: 0 !important;
+}
+
 #mwtotoSocialMenu ul li a {
-  display:flex !important; align-items:center !important; gap:11px !important;
-  width:100% !important; min-height:65px !important; padding:9px !important;
-  color:#fff !important; text-decoration:none !important;
-  background:rgba(255,255,255,.08) !important;
-  border:1px solid rgba(255,255,255,.25) !important;
-  border-radius:13px !important; box-sizing:border-box !important;
+  display: flex !important;
+  align-items: center !important;
+  gap: 11px !important;
+
+  width: 100% !important;
+  min-height: 64px !important;
+
+  padding: 9px !important;
+
+  color: #30343a !important;
+  text-decoration: none !important;
+
+  background:
+    #f5f6f8 !important;
+
+  border:
+    1px solid rgba(145, 151, 162, 0.25) !important;
+
+  border-radius: 11px !important;
+
+  box-sizing: border-box !important;
+
+  transition:
+    background 0.18s ease,
+    transform 0.18s ease !important;
 }
+
+#mwtotoSocialMenu ul li a:hover {
+  background: #e9ebef !important;
+  transform: translateX(3px);
+}
+
 #mwtotoSocialMenu ul li img {
-  width:52px !important; min-width:52px !important; height:52px !important;
-  object-fit:cover !important; border-radius:10px !important;
+  width: 50px !important;
+  min-width: 50px !important;
+  height: 50px !important;
+
+  object-fit: cover !important;
+
+  border:
+    1px solid rgba(145, 151, 162, 0.25) !important;
+
+  border-radius: 9px !important;
 }
-#mwtotoSocialMenu .mwtoto-info { display:flex !important; flex:1 !important; flex-direction:column !important; min-width:0 !important; }
-#mwtotoSocialMenu .mwtoto-info span { color:#fff !important; font-size:14px !important; font-weight:800 !important; }
-#mwtotoSocialMenu .mwtoto-info small { margin-top:3px !important; color:rgba(255,255,255,.70) !important; font-size:11px !important; }
+
+#mwtotoSocialMenu .mwtoto-info {
+  display: flex !important;
+  flex: 1 !important;
+  flex-direction: column !important;
+
+  min-width: 0 !important;
+}
+
+#mwtotoSocialMenu .mwtoto-info span {
+  color: #30343a !important;
+
+  font-size: 14px !important;
+  font-weight: 500 !important;
+}
+
+#mwtotoSocialMenu .mwtoto-info small {
+  margin-top: 3px !important;
+
+  color: #757b84 !important;
+
+  font-size: 11px !important;
+  font-weight: 400 !important;
+}
+
 #mwtotoSocialMenu .mwtoto-close-btn {
-  width:100% !important; margin:5px 0 2px !important; padding:11px 15px !important;
-  color:#fff !important; font-size:14px !important; font-weight:800 !important;
-  background:linear-gradient(180deg,#ff6262 0%,#dc111b 55%,#780006 100%) !important;
-  border:1px solid rgba(255,255,255,.75) !important; border-radius:25px !important; cursor:pointer !important;
+  width: 100% !important;
+
+  margin: 5px 0 2px !important;
+  padding: 10px 15px !important;
+
+  color: #34383e !important;
+
+  font-size: 14px !important;
+  font-weight: 500 !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #e6e8ec 100%
+    ) !important;
+
+  border:
+    1px solid rgba(130, 136, 146, 0.40) !important;
+
+  border-radius: 22px !important;
+
+  cursor: pointer !important;
+
+  box-shadow:
+    0 3px 8px rgba(40, 45, 52, 0.10) !important;
 }
+
 #mwtotoToggleButton.mwtoto-toggle-btn {
-  position:fixed !important; z-index:2147483646 !important;
-  left:18px !important; bottom:88px !important;
-  display:block !important; padding:10px 16px !important;
-  background:linear-gradient(to bottom,#850000 0%,#ff0000 80%) !important;
-  color:#fff !important; border:2px solid #ff0000 !important;
-  border-radius:30px !important; cursor:pointer !important; font-size:16px !important;
+  position: fixed !important;
+  z-index: 2147483646 !important;
+
+  left: 18px !important;
+  bottom: 88px !important;
+
+  display: block !important;
+
+  padding: 9px 15px !important;
+
+  color: #30343a !important;
+
+  background:
+    linear-gradient(
+      180deg,
+      #ffffff 0%,
+      #e6e8ec 100%
+    ) !important;
+
+  border:
+    1px solid rgba(130, 136, 146, 0.42) !important;
+
+  border-radius: 24px !important;
+
+  box-shadow:
+    0 4px 12px rgba(40, 45, 52, 0.13),
+    inset 0 1px 0 #ffffff !important;
+
+  cursor: pointer !important;
+
+  font-size: 14px !important;
+  font-weight: 500 !important;
 }
