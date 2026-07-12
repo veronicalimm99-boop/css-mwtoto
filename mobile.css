@@ -7,11 +7,10 @@
     padding: 0 !important;
   }
 
-  body::before {
-    background:
-      url("https://imgstorage.site/view/yuyu/background-mobile-idr89.jpg")
-      center top / cover no-repeat !important;
-  }
+body::before {
+  background: #ffffff !important;
+  background-image: none !important;
+}
 
   /* ===== HILANGKAN RUANG KOSONG SEBELUM HEADER ===== */
   .header-before,
