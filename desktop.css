@@ -1,20 +1,17 @@
 /* DESKTOP + CSS UMUM */
 body {
-    background: #2a0a0d !important;
+  background: #ffffff !important;
 }
 
 body::before {
-    content: "";
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
+  content: "";
+  position: fixed;
+  inset: 0;
 
-    background: url(https://imgstorage.site/view/yuyu/mwtoto-bg.webp) center center no-repeat;
-    background-size: cover;
+  background: #ffffff !important;
+  background-image: none !important;
 
-    z-index: -1;
+  z-index: -1;
 }
 
 /* ===== BACKGROUND MOBILE ===== */
