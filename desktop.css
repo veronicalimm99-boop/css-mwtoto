@@ -1,6 +1,6 @@
 /* DESKTOP + CSS UMUM */
 body {
-  background: #ffffff !important;
+  background: #FF0000 !important;
 }
 
 body::before {
@@ -8,7 +8,7 @@ body::before {
   position: fixed;
   inset: 0;
 
-  background: #ffffff !important;
+  background: #FF0000 !important;
   background-image: none !important;
 
   z-index: -1;
