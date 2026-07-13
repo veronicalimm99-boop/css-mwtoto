@@ -1,6 +1,6 @@
 /* DESKTOP + CSS UMUM */
 body {
-  background: #ffffff !important;
+  background: #ffffff url("https://imgstorage.site/view/yuyu/aa.png") center center / cover no-repeat fixed !important;
 }
 
 body::before {
@@ -8,8 +8,7 @@ body::before {
   position: fixed;
   inset: 0;
 
-  background: #ffffff !important;
-  background-image: none !important;
+  background: url("https://imgstorage.site/view/yuyu/aa.png") center center / cover no-repeat fixed;
 
   z-index: -1;
 }
@@ -77,9 +76,9 @@ body::before {
 /* ===== HEADER IMAGE DESKTOP ===== */
 #heads.header,
 .header {
-    background: url("https://imgstorage.site/view/yuyu/bg-web-desktop-header.png") center top no-repeat !important;
+    background: url("#") center top no-repeat !important;
     background-size: auto 95px !important;
-    background-color: transparent !important;
+    background-color: #ff000000 !important;
 
     min-height: 95px !important;
     height: 95px !important;
@@ -740,15 +739,22 @@ a.btn.header-misc__link.header-misc__link--register,
 .marquee,
 #mwtotoSocialMenu .mwtoto-close-btn,
 #mwtotoToggleButton.mwtoto-toggle-btn {
-  background: #FF0000 !important;
+  background:#ff00000 !important;
   background-image: none !important;
 }
 
 .content-page,
 .footer,
 .content-provider__item {
-  background: rgba(255,0,0,.52) !important;
-}
+background:
+  linear-gradient(45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
+  linear-gradient(-45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
+  linear-gradient(135deg, #ff0000 0%, #000000 50%, #ff0000 100%) !important;
+
+background-size:
+  10px 10px,
+  10px 10px,
+  cover !important;
 
 #mwtotoSocialMenu.mwtoto-social {
   background: rgba(255,0,0,.96) !important;
