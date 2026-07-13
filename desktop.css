@@ -1,6 +1,6 @@
 /* DESKTOP + CSS UMUM */
 body {
-  background: #FF0000 !important;
+  background: #ffffff !important;
 }
 
 body::before {
@@ -8,7 +8,7 @@ body::before {
   position: fixed;
   inset: 0;
 
-  background: #FF0000 !important;
+  background: #ffffff !important;
   background-image: none !important;
 
   z-index: -1;
@@ -172,14 +172,14 @@ a.btn.header-misc__link.header-misc__link--login,
 a.btn.header-misc__link.header-misc__link--bar,
 a.btn.header-misc__link.header-misc__link--register,
 .sidebar-button:not(.sidebar-button--transparent) {
-    background: linear-gradient(to bottom, #ff5a5a 0%, #d71920 55%, #7a0508 100%) !important;
+    background: linear-gradient(to bottom, #FF0000 0%, #FF0000 55%, #FF0000 100%) !important;
     color: #ffffff !important;
 
     border: 1px solid rgba(230,230,230,0.75) !important;
 
     box-shadow:
         0 3px 0 #bfc4cc,
-        0 0 14px rgba(255,45,55,0.35),
+        0 0 14px rgba(255,0,0,0.35),
         inset 0 1px 0 rgba(255,255,255,0.55) !important;
 }
 
@@ -189,11 +189,11 @@ a.btn.header-misc__link.header-misc__link--register,
 }
 
 a.btn.header-misc__link.header-misc__link--register {
-    background: linear-gradient(0deg, #7a0508 0%, #d71920 58%, #ff6b6b 100%) !important;
+    background: linear-gradient(0deg, #FF0000 0%, #FF0000 58%, #FF0000 100%) !important;
 
     box-shadow:
         0px -3px 0px 0px #BCC6CC inset,
-        0 4px 12px rgba(255,45,55,0.35),
+        0 4px 12px rgba(255,0,0,0.35),
         inset 0 1px 0 rgba(255,255,255,0.45) !important;
 
     color: #ffffff !important;
@@ -206,22 +206,22 @@ a.btn.header-misc__link.header-misc__link--register {
 .game-promotions__menu-item-link,
 .user-transactions__menu-item-link,
 .my-favorite__menu-item-link {
-    background: linear-gradient(to bottom, #ff5a5a 0%, #b80d14 100%) !important;
+    background: linear-gradient(to bottom, #FF0000 0%, #FF0000 100%) !important;
 
     border: 1px solid rgba(230,230,230,0.65) !important;
 
     box-shadow:
         inset 0 1px 0 rgba(255,255,255,0.35),
-        0 0 8px rgba(255,45,55,0.25) !important;
+        0 0 8px rgba(255,0,0,0.25) !important;
 }
 
 /* ===== TOMBOL UTAMA - GLOSSY RED SILVER ===== */
 .sidebar-button:not(.sidebar-button--transparent) {
-    background: linear-gradient(to top, #7a0508 0%, #d71920 60%, #ff6b6b 100%) !important;
+    background: linear-gradient(to top, #FF0000 0%, #FF0000 60%, #FF0000 100%) !important;
 
     box-shadow:
         0 3px 0 0 #cfd3da,
-        0 0 12px rgba(255,45,55,0.30),
+        0 0 12px rgba(255,0,0,0.30),
         inset 0 1px 0 rgba(255,255,255,0.45) !important;
 
     color: #fff !important;
@@ -234,11 +234,11 @@ a.btn.header-misc__link.header-misc__link--register {
 
 /* ===== SIDENAV ACTIVE - RED SILVER GLOW ===== */
 .sidenav-float__item-link.active {
-    background: #e03a42 !important;
+    background: #FF0000 !important;
     border: 1px solid #d8dce3 !important;
 
     box-shadow:
-        0 0 16px rgba(255,45,55,0.45),
+        0 0 16px rgba(255,0,0,0.45),
         inset 0 1px 0 rgba(255,255,255,0.12) !important;
 }
 
@@ -259,7 +259,7 @@ a.btn.header-misc__link.header-misc__link--register {
 
 /* ===== GRADIENT TEXT - RED SILVER ===== */
 .gradient-text {
-    background: linear-gradient(to bottom, #ffffff 10%, #d8dce3 45%, #ff4a4a 100%) !important;
+    background: linear-gradient(to bottom, #ffffff 10%, #d8dce3 45%, #FF0000 100%) !important;
     -webkit-background-clip: text !important;
     background-clip: text !important;
 }
@@ -274,19 +274,19 @@ a.btn.header-misc__link.header-misc__link--register {
 }
 
 .select2-container--default .select2-results__option--highlighted[aria-selected] {
-    background-color: rgba(215,25,32,0.28) !important;
+    background-color: rgba(255,0,0,0.28) !important;
     color: #ffffff !important;
 }
 
 .select2-container--default .select2-results__option--selected,
 .select2-container--default .select2-results__option[aria-selected=true] {
-    background-color: rgba(215,25,32,0.34) !important;
+    background-color: rgba(255,0,0,0.34) !important;
 }
 
 /* ===== BADGE PROVIDER BORDER ===== */
 .content-provider__item-img-wrapper.category-green::before,
 .category-green::before {
-    background: linear-gradient(to bottom, rgba(230,230,230,1) 15%, rgba(255,45,55,0.45) 55%, rgba(230,230,230,0) 100%) !important;
+    background: linear-gradient(to bottom, rgba(230,230,230,1) 15%, rgba(255,0,0,0.45) 55%, rgba(230,230,230,0) 100%) !important;
 }
 
 .content,
@@ -315,23 +315,23 @@ a.btn.header-misc__link.header-misc__link--register {
             180deg,
             rgba(255,255,255,0.38) 0%,
             rgba(210,215,222,0.18) 12%,
-            rgba(255,74,74,0.92) 38%,
-            rgba(184,13,20,0.95) 68%,
-            rgba(105,8,12,0.94) 100%
+            rgba(255,0,0,0.92) 38%,
+            rgba(255,0,0,0.95) 68%,
+            rgba(255,0,0,0.94) 100%
         ) !important;
 
     border: 1px solid rgba(220,225,232,0.75) !important;
     border-bottom: 1px solid rgba(245,245,245,0.85) !important;
 
     box-shadow:
-        0 0 14px rgba(255,45,55,0.30),
+        0 0 14px rgba(255,0,0,0.30),
         inset 0 1px 0 rgba(255,255,255,0.65),
         inset 0 -1px 0 rgba(180,185,195,0.55),
         inset 0 0 0 1px rgba(255,255,255,0.12) !important;
 }
 
 .content-page__header--alt {
-    background: rgba(155, 14, 20, 0.82) !important;
+    background: rgba(255,0,0,0.82) !important;
     padding-top: 8px;
     padding-bottom: 8px;
     padding-left: 24px;
@@ -342,12 +342,12 @@ a.btn.header-misc__link.header-misc__link--register {
 /* ===== CONTENT PAGE - TETAP GLASS, TAPI TIDAK GANGGU SLIDER ===== */
 .content-page {
     color: #fff;
-    background: rgba(145, 18, 24, 0.52) !important;
+    background: rgba(255,0,0,0.52) !important;
 
     border: 1px solid rgba(230,230,230,0.55) !important;
 
     box-shadow:
-        0 0 22px rgba(255,45,55,0.28),
+        0 0 22px rgba(255,0,0,0.28),
         inset 0 1px 0 rgba(255,255,255,0.18),
         inset 0 0 0 1px rgba(255,255,255,0.06) !important;
 
@@ -365,11 +365,11 @@ a.btn.header-misc__link.header-misc__link--register {
 
 /* ===== FOOTER - GLASS RED SILVER BLUR ===== */
 .footer {
-    background: rgba(120, 16, 21, 0.48) !important;
+    background: rgba(255,0,0,0.48) !important;
     border-top: 1px solid rgba(230,230,230,0.48) !important;
 
     box-shadow:
-        0 -4px 22px rgba(255,45,55,0.24),
+        0 -4px 22px rgba(255,0,0,0.24),
         inset 0 1px 0 rgba(255,255,255,0.10) !important;
 
     backdrop-filter: blur(8px) !important;
@@ -378,7 +378,7 @@ a.btn.header-misc__link.header-misc__link--register {
 
 /* ===== MARQUEE - RED SILVER BAR ===== */
 .marquee {
-    background: linear-gradient(90deg, #f8d3d3 0%, #ff5a5a 35%, #d71920 70%, #8a060a 100%) !important;
+    background: linear-gradient(90deg, #FF0000 0%, #FF0000 35%, #FF0000 70%, #FF0000 100%) !important;
     color: #ffffff !important;
 
     font-size: 17px;
@@ -394,7 +394,7 @@ a.btn.header-misc__link.header-misc__link--register {
     margin-top: 20px;
 
     box-shadow:
-        0 0 18px rgba(255,45,55,0.42),
+        0 0 18px rgba(255,0,0,0.42),
         inset 0 1px 0 rgba(255,255,255,0.45) !important;
 
     border: 1px solid rgba(230,230,230,0.65) !important;
@@ -402,12 +402,12 @@ a.btn.header-misc__link.header-misc__link--register {
 
 /* ===== KOTAK ICON PROVIDER - RED GLASS SILVER BORDER ===== */
 .content-provider__item {
-    background: rgba(95, 16, 20, 0.44) !important;
+    background: rgba(255,0,0,0.44) !important;
     border-radius: 12px !important;
     border: 1px solid rgba(230,230,230,0.36) !important;
 
     box-shadow:
-        0 0 12px rgba(255,45,55,0.18),
+        0 0 12px rgba(255,0,0,0.18),
         inset 0 1px 0 rgba(255,255,255,0.08) !important;
 }
 
@@ -428,7 +428,7 @@ a.btn.header-misc__link.header-misc__link--register {
     border: 1px solid rgba(230,230,230,0.38) !important;
 
     box-shadow:
-        0 0 10px rgba(255,45,55,0.16),
+        0 0 10px rgba(255,0,0,0.16),
         inset 0 1px 0 rgba(255,255,255,0.12) !important;
 
     backdrop-filter: blur(6px) !important;
@@ -477,10 +477,10 @@ a.btn.header-misc__link.header-misc__link--register {
   overflow-y: auto !important;
   padding: 16px !important;
   margin: 0 !important;
-  background: linear-gradient(180deg, rgba(160,18,24,.97) 0%, rgba(70,8,12,.98) 100%) !important;
+  background: linear-gradient(180deg, rgba(255,0,0,.97) 0%, rgba(70,8,12,.98) 100%) !important;
   border: 1px solid rgba(255,255,255,.65) !important;
   border-radius: 18px !important;
-  box-shadow: 0 0 28px rgba(255,0,20,.55), inset 0 1px 0 rgba(255,255,255,.20) !important;
+  box-shadow: 0 0 28px rgba(255,0,0,.55), inset 0 1px 0 rgba(255,255,255,.20) !important;
   opacity: 0 !important;
   visibility: hidden !important;
   pointer-events: none !important;
@@ -515,14 +515,14 @@ a.btn.header-misc__link.header-misc__link--register {
 #mwtotoSocialMenu .mwtoto-close-btn {
   width:100% !important; margin:5px 0 2px !important; padding:11px 15px !important;
   color:#fff !important; font-size:14px !important; font-weight:800 !important;
-  background:linear-gradient(180deg,#ff7777 0%,#e42a32 55%,#9b0b11 100%) !important;
+  background:linear-gradient(180deg,#FF0000 0%,#FF0000 55%,#FF0000 100%) !important;
   border:1px solid rgba(255,255,255,.75) !important; border-radius:25px !important; cursor:pointer !important;
 }
 #mwtotoToggleButton.mwtoto-toggle-btn {
   position:fixed !important; z-index:2147483646 !important;
   left:18px !important; bottom:88px !important;
   display:block !important; padding:10px 16px !important;
-  background:linear-gradient(to bottom,#a30b0f 0%,#ff3038 80%) !important;
+  background:linear-gradient(to bottom,#FF0000 0%,#FF0000 80%) !important;
   color:#fff !important; border:2px solid #ff0000 !important;
   border-radius:30px !important; cursor:pointer !important; font-size:16px !important;
 }
@@ -700,7 +700,7 @@ a.btn.header-misc__link.header-misc__link--register,
 .sidenav-float__item-link.active {
   border: none !important;
   box-shadow:
-    0 0 12px rgba(255, 76, 84, 0.78),
+    0 0 12px rgba(255,0,0,0.78),
     inset 0 1px 0 rgb(255, 255, 255) !important;
 }
 
@@ -721,4 +721,61 @@ a.btn.header-misc__link.header-misc__link--register,
   box-shadow:
     0 5px 16px rgba(0, 0, 0, 0.12),
     inset 0 1px 0 rgba(255, 255, 255, 0.22) !important;
+}
+
+
+/* ===== FINAL PURE RED #FF0000 — BORDER PUTIH TETAP ===== */
+a.btn.header-misc__link.header-misc__link--login,
+a.btn.header-misc__link.header-misc__link--bar,
+a.btn.header-misc__link.header-misc__link--register,
+.sidebar-button:not(.sidebar-button--transparent),
+.header-category__menu-item-link,
+.user-referral__menu-item-link,
+.game-promotions__menu-item-link,
+.user-transactions__menu-item-link,
+.my-favorite__menu-item-link,
+.sidenav-float__item-link.active,
+.content-page__header,
+.content-page__header--alt,
+.marquee,
+#mwtotoSocialMenu .mwtoto-close-btn,
+#mwtotoToggleButton.mwtoto-toggle-btn {
+  background: #FF0000 !important;
+  background-image: none !important;
+}
+
+.content-page,
+.footer,
+.content-provider__item {
+  background: rgba(255,0,0,.52) !important;
+}
+
+#mwtotoSocialMenu.mwtoto-social {
+  background: rgba(255,0,0,.96) !important;
+}
+
+a.btn.header-misc__link.header-misc__link--login,
+a.btn.header-misc__link.header-misc__link--bar,
+a.btn.header-misc__link.header-misc__link--register,
+.sidebar-button:not(.sidebar-button--transparent),
+.header-category__menu-item-link,
+.user-referral__menu-item-link,
+.game-promotions__menu-item-link,
+.user-transactions__menu-item-link,
+.my-favorite__menu-item-link,
+.content-page,
+.content-page__header,
+.content-page__header--alt,
+.content-provider__item,
+.content-provider__item-img-wrapper,
+.footer,
+.footer-partner--item-img,
+.footer-payments--item,
+.marquee,
+#mwtotoSocialMenu.mwtoto-social,
+#mwtotoSocialMenu ul li a,
+#mwtotoSocialMenu ul li img,
+#mwtotoSocialMenu .mwtoto-close-btn,
+#mwtotoToggleButton.mwtoto-toggle-btn {
+  border-color: rgba(255,255,255,.78) !important;
 }
