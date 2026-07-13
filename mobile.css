@@ -428,6 +428,7 @@ body::before {
         }
     }
 }
+
 .marquee__container {
     padding-left: 35px;
     background: linear-gradient(93deg, #FF0000 0%, #000000 35%, #FF0000 70%, #FF0000 100%) !important;
