@@ -186,7 +186,15 @@ a.btn.header-misc__link.header-misc__link--register,
 .header-misc__link--register span {
     color: #ffffff !important;
 }
-
+.header-misc__link-teks {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+}
 a.btn.header-misc__link.header-misc__link--register {
     background: linear-gradient(0deg, #FF0000 0%, #FF0000 58%, #FF0000 100%) !important;
 
