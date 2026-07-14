@@ -556,26 +556,19 @@ a.btn.header-misc__link.header-misc__link--register {
   position:fixed !important; z-index:2147483646 !important;
   left:18px !important; bottom:88px !important;
   display:block !important; padding:10px 16px !important;
-  background:linear-gradient(to bottom,#FF0000 0%,#FF0000 80%) !important;
+  background:linear-gradient(to bottom,#bd4848 0%,#FF0000 80%) !important;
   color:#fff !important; border:2px solid #ff0000 !important;
   border-radius:30px !important; cursor:pointer !important; font-size:16px !important;
 }
+
 /* ==================================================
-   FINAL BORDER PUTIH SILVER — DESKTOP
-   HANYA BORDER, TIDAK MENGUBAH WARNA TAMPILAN
+   FINAL OVERRIDE TERPADU — RED / BLACK / SILVER
+   Semua fungsi lama tetap dipertahankan.
 ================================================== */
 
+/* Header tetap tanpa border/background tambahan */
 #heads.header,
-.header {
-  border: none !important;
-  border-top: none !important;
-  border-right: none !important;
-  border-bottom: none !important;
-  border-left: none !important;
-  outline: none !important;
-  box-shadow: none !important;
-}
-
+.header,
 .header .container,
 #heads.header .container,
 .header__wrapper,
@@ -588,138 +581,83 @@ a.btn.header-misc__link.header-misc__link--register {
   box-shadow: none !important;
 }
 
+/* Tombol dan menu utama */
 a.btn.header-misc__link.header-misc__link--login,
 a.btn.header-misc__link.header-misc__link--bar,
 a.btn.header-misc__link.header-misc__link--register,
-.sidebar-button:not(.sidebar-button--transparent) {
-  border: 1px solid rgba(235, 238, 242, 0.80) !important;
-  box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.36) !important;
-}
-
+.sidebar-button:not(.sidebar-button--transparent),
 .header-category__menu-item-link,
 .user-referral__menu-item-link,
 .game-promotions__menu-item-link,
 .user-transactions__menu-item-link,
-.my-favorite__menu-item-link {
-  border: 1px solid rgba(235, 238, 242, 0.72) !important;
-  box-shadow:
-    0 2px 5px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.30) !important;
-}
-
-.sidenav-float {
-  border: 1px solid rgba(215, 220, 227, 0.62) !important;
-}
-
-.sidenav-float__item-link {
-  border-bottom: 1px solid rgba(220, 224, 230, 0.28) !important;
-}
-
-.sidenav-float__item-link:last-child {
-  border-bottom: 0 !important;
-}
-
-.sidenav-float__item-link.active {
-  border: 1px solid rgba(235, 238, 242, 0.82) !important;
-  box-shadow:
-    0 0 8px rgba(255, 255, 255, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.24) !important;
-}
-
-.marquee {
-  border: 1px solid rgba(235, 238, 242, 0.74) !important;
-  box-shadow:
-    0 3px 8px rgba(0, 0, 0, 0.14),
-    inset 0 1px 0 rgba(255, 255, 255, 0.34) !important;
-}
-
-.content-page {
-  border: 1px solid rgba(225, 229, 235, 0.68) !important;
-  box-shadow:
-    0 5px 16px rgba(0, 0, 0, 0.15),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
-}
-
-.content-page__header {
-  border: 1px solid rgba(235, 238, 242, 0.78) !important;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.86) !important;
-  box-shadow:
-    0 3px 10px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.42) !important;
-}
-
-.content-page__header--alt {
-  border: 1px solid rgba(225, 229, 235, 0.62) !important;
-}
-
-.content-provider__item {
-  border: 1px solid rgba(225, 229, 235, 0.58) !important;
-  box-shadow:
-    0 3px 9px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.14) !important;
-}
-
-.content-provider__item-img-wrapper {
-  border: 1px solid rgba(235, 238, 242, 0.64) !important;
-}
-
-.select2-container--default .select2-selection--single {
-  border: 1px solid rgba(225, 229, 235, 0.68) !important;
-}
-
-.footer {
-  border-top: 1px solid rgba(225, 229, 235, 0.62) !important;
-  box-shadow:
-    0 -3px 12px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.12) !important;
-}
-
-.footer-partner--item-img,
-.footer-payments--item {
-  border: 1px solid rgba(225, 229, 235, 0.55) !important;
-  box-shadow:
-    0 2px 7px rgba(0, 0, 0, 0.10),
-    inset 0 1px 0 rgba(255, 255, 255, 0.13) !important;
-}
-
-#mwtotoSocialMenu.mwtoto-social {
-  border: 1px solid rgba(235, 238, 242, 0.74) !important;
-  box-shadow:
-    0 8px 22px rgba(0, 0, 0, 0.24),
-    inset 0 1px 0 rgba(255, 255, 255, 0.18) !important;
-}
-
-#mwtotoSocialMenu ul li a {
-  border: 1px solid rgba(225, 229, 235, 0.48) !important;
-  box-shadow:
-    inset 0 1px 0 rgba(255, 255, 255, 0.10) !important;
-}
-
-#mwtotoSocialMenu ul li img {
-  border: 1px solid rgba(235, 238, 242, 0.62) !important;
-}
-
+.my-favorite__menu-item-link,
+.content-page__header,
+.content-page__header--alt,
 #mwtotoSocialMenu .mwtoto-close-btn {
-  border: 1px solid rgba(245, 247, 250, 0.82) !important;
+  background:
+    linear-gradient(45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+    linear-gradient(135deg, #ff0000 0%, #000000 50%, #ff0000 100%) !important;
+
+  background-size:
+    10px 10px,
+    10px 10px,
+    cover !important;
+
+  color: #ffffff !important;
+  border: 1px solid rgba(235,238,242,.78) !important;
+
   box-shadow:
-    0 3px 7px rgba(0, 0, 0, 0.16),
-    inset 0 1px 0 rgba(255, 255, 255, 0.30) !important;
+    0 3px 9px rgba(0,0,0,.18),
+    inset 0 1px 0 rgba(255,255,255,.30) !important;
 }
 
-#mwtotoToggleButton.mwtoto-toggle-btn {
-  border: 1px solid rgba(235, 238, 242, 0.78) !important;
+/* Konten utama dan footer */
+.content-page,
+.footer,
+.content-provider__item {
+  background:
+    linear-gradient(45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+    linear-gradient(135deg, #ff0000 0%, #000000 50%, #ff0000 100%) !important;
+
+  background-size:
+    10px 10px,
+    10px 10px,
+    cover !important;
+
+  background-blend-mode: screen !important;
+  border-color: rgba(225,229,235,.68) !important;
+
   box-shadow:
-    0 3px 9px rgba(0, 0, 0, 0.18),
-    inset 0 1px 0 rgba(255, 255, 255, 0.28) !important;
+    0 5px 16px rgba(0,0,0,.14),
+    inset 0 1px 0 rgba(255,255,255,.22) !important;
 }
 
+/* Marquee tetap merah solid dan tidak transparan */
+.marquee {
+  background: #ff0000 !important;
+  background-color: #ff0000 !important;
+  background-image: none !important;
+  opacity: 1 !important;
 
-/* ==================================================
-   FINAL FIX — SIDENAV KIRI TANPA BORDER
-================================================== */
+  border: 1px solid rgba(235,238,242,.78) !important;
 
+  box-shadow:
+    0 3px 8px rgba(0,0,0,.20),
+    inset 0 1px 0 rgba(255,255,255,.35) !important;
+}
+
+/* Provider, payment, dan elemen pendukung */
+.content-provider__item-img-wrapper,
+.footer-partner--item-img,
+.footer-payments--item,
+#mwtotoSocialMenu ul li a,
+#mwtotoSocialMenu ul li img {
+  border-color: rgba(225,229,235,.62) !important;
+}
+
+/* Sidenav kiri tetap tanpa border */
 .sidenav-float,
 .sidenav-float__item-link,
 .sidenav-float__item-link.active {
@@ -732,117 +670,103 @@ a.btn.header-misc__link.header-misc__link--register,
 }
 
 .sidenav-float__item-link.active {
-  border: none !important;
-  box-shadow:
-    0 0 12px rgba(255,0,0,0.78),
-    inset 0 1px 0 rgb(255, 255, 255) !important;
-}
-
-/* ==================================================
-   FINAL BRIGHTNESS TUNING — SEDIKIT LEBIH TERANG
-================================================== */
-
-.content-page,
-.footer,
-.content-provider__item,
-#mwtotoSocialMenu.mwtoto-social {
-  background-blend-mode: screen !important;
-}
-
-.content-page,
-.footer,
-.content-provider__item {
-  box-shadow:
-    0 5px 16px rgba(0, 0, 0, 0.12),
-    inset 0 1px 0 rgba(255, 255, 255, 0.22) !important;
-}
-
-
-/* ===== FINAL PURE RED #FF0000 — BORDER PUTIH TETAP ===== */
-a.btn.header-misc__link.header-misc__link--login,
-a.btn.header-misc__link.header-misc__link--bar,
-a.btn.header-misc__link.header-misc__link--register,
-.sidebar-button:not(.sidebar-button--transparent),
-.header-category__menu-item-link,
-.user-referral__menu-item-link,
-.game-promotions__menu-item-link,
-.user-transactions__menu-item-link,
-.my-favorite__menu-item-link,
-.sidenav-float__item-link.active,
-.content-page__header,
-.content-page__header--alt,
-#mwtotoSocialMenu .mwtoto-close-btn,
-#mwtotoToggleButton.mwtoto-toggle-btn {
   background:
-  linear-gradient(45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
-  linear-gradient(-45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
-  linear-gradient(135deg, #ff0000 0%, #000000 50%, #ff0000 100%) !important;
-  background-image: none !important;
+    linear-gradient(45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+    linear-gradient(-45deg, rgba(255,255,255,.04) 25%, transparent 25%),
+    linear-gradient(135deg, #ff0000 0%, #000000 50%, #ff0000 100%) !important;
+
+  background-size:
+    10px 10px,
+    10px 10px,
+    cover !important;
+
+  box-shadow:
+    0 0 12px rgba(255,0,0,.78),
+    inset 0 1px 0 rgba(255,255,255,.55) !important;
 }
 
-.content-page,
-.footer,
-.content-provider__item {
-background:
-  linear-gradient(45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
-  linear-gradient(-45deg, rgba(255,255,255,0.04) 25%, transparent 25%),
-  linear-gradient(135deg, #ff0000 0%, #000000 50%, #ff0000 100%) !important;
-
-background-size:
-  10px 10px,
-  10px 10px,
-  cover !important;
-}
-
+/* Sidebar menu cepat */
 #mwtotoSocialMenu.mwtoto-social {
-  background: rgba(255,0,0,.96) !important;
+  background: linear-gradient(
+    180deg,
+    rgba(255,0,0,.97) 0%,
+    rgba(70,8,12,.98) 100%
+  ) !important;
+
+  border: 1px solid rgba(235,238,242,.74) !important;
+
+  box-shadow:
+    0 8px 22px rgba(0,0,0,.24),
+    inset 0 1px 0 rgba(255,255,255,.18) !important;
 }
 
-a.btn.header-misc__link.header-misc__link--login,
-a.btn.header-misc__link.header-misc__link--bar,
-a.btn.header-misc__link.header-misc__link--register,
-.sidebar-button:not(.sidebar-button--transparent),
-.header-category__menu-item-link,
-.user-referral__menu-item-link,
-.game-promotions__menu-item-link,
-.user-transactions__menu-item-link,
-.my-favorite__menu-item-link,
-.content-page,
-.content-page__header,
-.content-page__header--alt,
-.content-provider__item,
-.content-provider__item-img-wrapper,
-.footer,
-.footer-partner--item-img,
-.footer-payments--item,
-.marquee,
-#mwtotoSocialMenu.mwtoto-social,
-#mwtotoSocialMenu ul li a,
-#mwtotoSocialMenu ul li img,
-#mwtotoSocialMenu .mwtoto-close-btn,
+/* Tombol Menu — dipisahkan agar tidak pernah transparan */
 #mwtotoToggleButton.mwtoto-toggle-btn {
-  border-color: rgba(255,255,255,.78) !important;
+  position: fixed !important;
+  z-index: 2147483646 !important;
+  left: 18px !important;
+  bottom: 88px !important;
+
+  display: block !important;
+  padding: 10px 16px !important;
+
+  background: linear-gradient(
+    180deg,
+    #ff5a5a 0%,
+    #ff0000 48%,
+    #a80000 100%
+  ) !important;
+
+  background-color: #ff0000 !important;
+  background-image: linear-gradient(
+    180deg,
+    #ff5a5a 0%,
+    #ff0000 48%,
+    #a80000 100%
+  ) !important;
+
+  opacity: 1 !important;
+  visibility: visible !important;
+
+  color: #ffffff !important;
+  font-size: 16px !important;
+  font-weight: 700 !important;
+
+  border: 1px solid rgba(255,255,255,.88) !important;
+  border-radius: 30px !important;
+
+  box-shadow:
+    0 3px 9px rgba(0,0,0,.35),
+    0 0 12px rgba(255,0,0,.55),
+    inset 0 1px 0 rgba(255,255,255,.45) !important;
+
+  cursor: pointer !important;
 }
 
 /* ==================================================
    COUNTER PRIZE — RANDOM COUNT + BLING-BLING
 ================================================== */
+
 .counter-prize {
   position: relative !important;
   overflow: hidden !important;
   isolation: isolate !important;
+
   background:
     radial-gradient(circle at 18% 25%, rgba(255,255,255,.30), transparent 10%),
     radial-gradient(circle at 82% 72%, rgba(255,255,255,.20), transparent 12%),
     linear-gradient(135deg, #ff0000 0%, #080808 48%, #ff0000 100%) !important;
+
   border: 1px solid rgba(255,255,255,.82) !important;
   border-radius: 12px !important;
+
   box-shadow:
     0 0 12px rgba(255,0,0,.55),
     0 0 24px rgba(255,255,255,.16),
     inset 0 1px 0 rgba(255,255,255,.42),
     inset 0 0 18px rgba(255,0,0,.24) !important;
 }
+
 .counter-prize::before {
   content: "" !important;
   position: absolute !important;
@@ -850,6 +774,7 @@ a.btn.header-misc__link.header-misc__link--register,
   left: -45% !important;
   width: 38% !important;
   height: 280% !important;
+
   background: linear-gradient(
     90deg,
     transparent 0%,
@@ -858,54 +783,89 @@ a.btn.header-misc__link.header-misc__link--register,
     rgba(255,255,255,.05) 75%,
     transparent 100%
   ) !important;
+
   transform: rotate(20deg) !important;
   filter: blur(1px) !important;
+
   animation: counterPrizeKilau 3.2s linear infinite !important;
+
   pointer-events: none !important;
   z-index: 0 !important;
 }
+
 .counter-prize::after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
+
   background-image:
     radial-gradient(circle, rgba(255,255,255,.95) 0 1px, transparent 2px),
     radial-gradient(circle, rgba(255,215,0,.75) 0 1px, transparent 2px) !important;
+
   background-size: 34px 34px, 52px 52px !important;
   background-position: 0 0, 17px 13px !important;
+
   opacity: .18 !important;
   animation: counterPrizeBintang 1.6s ease-in-out infinite alternate !important;
+
   pointer-events: none !important;
   z-index: 0 !important;
 }
+
 .counter-prize__item {
   position: relative !important;
   z-index: 2 !important;
 }
+
+/* Mendukung HTML lama (.count) dan class baru (.counter-number) */
+.counter-prize .count,
 .counter-prize .counter-number {
   display: inline-block !important;
   color: #ffffff !important;
+
   text-shadow:
     0 0 4px rgba(255,255,255,.95),
     0 0 10px rgba(255,0,0,.85),
     0 0 16px rgba(255,215,0,.40) !important;
 }
+
 .counter-prize .fa-circle {
   color: #31ff6a !important;
   font-size: 8px !important;
   margin-right: 5px !important;
+
   filter: drop-shadow(0 0 5px #31ff6a) !important;
   animation: counterOnlinePulse .9s ease-in-out infinite alternate !important;
 }
+
 @keyframes counterPrizeKilau {
-  0% { left: -45%; }
-  100% { left: 125%; }
+  0% {
+    left: -45%;
+  }
+
+  100% {
+    left: 125%;
+  }
 }
+
 @keyframes counterPrizeBintang {
-  from { opacity: .08; }
-  to { opacity: .30; }
+  from {
+    opacity: .08;
+  }
+
+  to {
+    opacity: .30;
+  }
 }
+
 @keyframes counterOnlinePulse {
-  from { opacity: .45; transform: scale(.85); }
-  to { opacity: 1; transform: scale(1.2); }
+  from {
+    opacity: .45;
+    transform: scale(.85);
+  }
+
+  to {
+    opacity: 1;
+    transform: scale(1.2);
+  }
 }
