@@ -882,7 +882,7 @@ a.btn.header-misc__link.header-misc__link--register,
   position: relative !important;
   z-index: 2 !important;
 }
-.counter-prize .count {
+.counter-prize .counter-number {
   display: inline-block !important;
   color: #ffffff !important;
   text-shadow:
