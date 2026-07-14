@@ -7,10 +7,11 @@
     padding: 0 !important;
   }
 
-body::before {
-  background: #ffffff !important;
-  background-image: none !important;
-}
+  body::before {
+    background:
+      url("https://imgstorage.site/view/yuyu/mwtoto-bg-852x3305.jpg")
+      center top / cover no-repeat !important;
+  } 
 
   /* ===== HILANGKAN RUANG KOSONG SEBELUM HEADER ===== */
   .header-before,
