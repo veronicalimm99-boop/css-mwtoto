@@ -823,3 +823,89 @@ a.btn.header-misc__link.header-misc__link--register,
 #mwtotoToggleButton.mwtoto-toggle-btn {
   border-color: rgba(255,255,255,.78) !important;
 }
+
+/* ==================================================
+   COUNTER PRIZE — RANDOM COUNT + BLING-BLING
+================================================== */
+.counter-prize {
+  position: relative !important;
+  overflow: hidden !important;
+  isolation: isolate !important;
+  background:
+    radial-gradient(circle at 18% 25%, rgba(255,255,255,.30), transparent 10%),
+    radial-gradient(circle at 82% 72%, rgba(255,255,255,.20), transparent 12%),
+    linear-gradient(135deg, #ff0000 0%, #080808 48%, #ff0000 100%) !important;
+  border: 1px solid rgba(255,255,255,.82) !important;
+  border-radius: 12px !important;
+  box-shadow:
+    0 0 12px rgba(255,0,0,.55),
+    0 0 24px rgba(255,255,255,.16),
+    inset 0 1px 0 rgba(255,255,255,.42),
+    inset 0 0 18px rgba(255,0,0,.24) !important;
+}
+.counter-prize::before {
+  content: "" !important;
+  position: absolute !important;
+  top: -90% !important;
+  left: -45% !important;
+  width: 38% !important;
+  height: 280% !important;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255,255,255,.05) 25%,
+    rgba(255,255,255,.85) 50%,
+    rgba(255,255,255,.05) 75%,
+    transparent 100%
+  ) !important;
+  transform: rotate(20deg) !important;
+  filter: blur(1px) !important;
+  animation: counterPrizeKilau 3.2s linear infinite !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+.counter-prize::after {
+  content: "" !important;
+  position: absolute !important;
+  inset: 0 !important;
+  background-image:
+    radial-gradient(circle, rgba(255,255,255,.95) 0 1px, transparent 2px),
+    radial-gradient(circle, rgba(255,215,0,.75) 0 1px, transparent 2px) !important;
+  background-size: 34px 34px, 52px 52px !important;
+  background-position: 0 0, 17px 13px !important;
+  opacity: .18 !important;
+  animation: counterPrizeBintang 1.6s ease-in-out infinite alternate !important;
+  pointer-events: none !important;
+  z-index: 0 !important;
+}
+.counter-prize__item {
+  position: relative !important;
+  z-index: 2 !important;
+}
+.counter-prize .count {
+  display: inline-block !important;
+  color: #ffffff !important;
+  text-shadow:
+    0 0 4px rgba(255,255,255,.95),
+    0 0 10px rgba(255,0,0,.85),
+    0 0 16px rgba(255,215,0,.40) !important;
+}
+.counter-prize .fa-circle {
+  color: #31ff6a !important;
+  font-size: 8px !important;
+  margin-right: 5px !important;
+  filter: drop-shadow(0 0 5px #31ff6a) !important;
+  animation: counterOnlinePulse .9s ease-in-out infinite alternate !important;
+}
+@keyframes counterPrizeKilau {
+  0% { left: -45%; }
+  100% { left: 125%; }
+}
+@keyframes counterPrizeBintang {
+  from { opacity: .08; }
+  to { opacity: .30; }
+}
+@keyframes counterOnlinePulse {
+  from { opacity: .45; transform: scale(.85); }
+  to { opacity: 1; transform: scale(1.2); }
+}
