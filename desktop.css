@@ -393,15 +393,45 @@ a.btn.header-misc__link.header-misc__link--register {
   background-image: none !important;
   opacity: 1 !important;
 
+  color: #ffffff !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+
+  position: relative !important;
+  width: 100% !important;
+  min-height: 44px !important;
+  white-space: nowrap !important;
+  overflow: hidden !important;
+
+  border-radius: 5px !important;
+  margin-top: 20px !important;
+
   border: 1px solid rgba(255, 255, 255, 0.78) !important;
   box-shadow:
     0 3px 8px rgba(0, 0, 0, 0.25),
     inset 0 1px 0 rgba(255, 255, 255, 0.35) !important;
 }
 
-.marquee,
-.marquee * {
+.marquee__wrapper,
+.marquee__container {
+  width: 100% !important;
+  min-height: 44px !important;
+  overflow: hidden !important;
+}
+
+.marquee__msg {
+  display: block !important;
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  padding: 10px 12px !important;
   color: #ffffff !important;
+  font-size: 17px !important;
+  font-weight: bold !important;
+  line-height: 24px !important;
+  opacity: 1 !important;
+  visibility: visible !important;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.85) !important;
 }
 
 /* ===== KOTAK ICON PROVIDER - RED GLASS SILVER BORDER ===== */
@@ -741,7 +771,6 @@ a.btn.header-misc__link.header-misc__link--register,
 .sidenav-float__item-link.active,
 .content-page__header,
 .content-page__header--alt,
-.marquee,
 #mwtotoSocialMenu .mwtoto-close-btn,
 #mwtotoToggleButton.mwtoto-toggle-btn {
   background:
@@ -763,6 +792,7 @@ background-size:
   10px 10px,
   10px 10px,
   cover !important;
+}
 
 #mwtotoSocialMenu.mwtoto-social {
   background: rgba(255,0,0,.96) !important;
