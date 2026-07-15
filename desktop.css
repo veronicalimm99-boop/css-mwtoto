@@ -744,7 +744,7 @@ a.btn.header-misc__link.header-misc__link--register,
 }
 
 /* ==================================================
-   COUNTER PRIZE — 4 DATA + CYAN NEON + BLING-BLING
+   COUNTER PRIZE — 4 DATA RED BLACK SILVER
 ================================================== */
 
 .counter-prize {
@@ -756,16 +756,28 @@ a.btn.header-misc__link.header-misc__link--register,
   overflow: hidden !important;
   isolation: isolate !important;
   box-sizing: border-box !important;
+
   background:
-    radial-gradient(circle at 50% 0%, rgba(36,91,157,.32), transparent 60%),
-    linear-gradient(145deg, #101c45 0%, #071330 55%, #050d24 100%) !important;
-  border: 2px solid #26ffff !important;
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(255, 0, 0, 0.22),
+      transparent 58%
+    ),
+    linear-gradient(
+      145deg,
+      #240000 0%,
+      #0d0505 52%,
+      #020202 100%
+    ) !important;
+
+  border: 1px solid rgba(235, 238, 242, 0.82) !important;
   border-radius: 17px !important;
+
   box-shadow:
-    0 0 8px rgba(38,255,255,.95),
-    0 0 20px rgba(0,229,255,.65),
-    inset 0 1px 0 rgba(255,255,255,.45),
-    inset 0 0 20px rgba(0,153,255,.14) !important;
+    0 0 8px rgba(255, 0, 0, 0.58),
+    0 0 18px rgba(150, 0, 0, 0.38),
+    inset 0 1px 0 rgba(255, 255, 255, 0.35),
+    inset 0 0 18px rgba(255, 0, 0, 0.12) !important;
 }
 
 .counter-prize::before {
@@ -775,16 +787,19 @@ a.btn.header-misc__link.header-misc__link--register,
   left: -55% !important;
   width: 34% !important;
   height: 300% !important;
+
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(255,255,255,.08),
-    rgba(116,255,255,.52),
-    rgba(255,255,255,.08),
+    rgba(255, 255, 255, 0.05),
+    rgba(255, 255, 255, 0.48),
+    rgba(255, 255, 255, 0.05),
     transparent
   ) !important;
+
   transform: rotate(20deg) !important;
-  animation: mwtotoCounterShine 3.5s linear infinite !important;
+  animation: mwtotoCounterShine 4.5s linear infinite !important;
+
   pointer-events: none !important;
   z-index: 1 !important;
 }
@@ -793,13 +808,25 @@ a.btn.header-misc__link.header-misc__link--register,
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
+
   background-image:
-    radial-gradient(circle, rgba(255,255,255,.80) 0 1px, transparent 2px),
-    radial-gradient(circle, rgba(38,255,255,.65) 0 1px, transparent 2px) !important;
-  background-size: 34px 34px, 52px 52px !important;
-  background-position: 0 0, 17px 13px !important;
-  opacity: .15 !important;
-  animation: mwtotoCounterStars 1.6s ease-in-out infinite alternate !important;
+    radial-gradient(
+      circle,
+      rgba(255, 255, 255, 0.72) 0 1px,
+      transparent 2px
+    ),
+    radial-gradient(
+      circle,
+      rgba(255, 0, 0, 0.55) 0 1px,
+      transparent 2px
+    ) !important;
+
+  background-size: 38px 38px, 56px 56px !important;
+  background-position: 0 0, 18px 14px !important;
+
+  opacity: 0.12 !important;
+  animation: mwtotoCounterStars 1.8s ease-in-out infinite alternate !important;
+
   pointer-events: none !important;
   z-index: 1 !important;
 }
@@ -807,6 +834,7 @@ a.btn.header-misc__link.header-misc__link--register,
 .mwtoto-counter-row {
   position: relative !important;
   z-index: 2 !important;
+
   display: grid !important;
   grid-template-columns: 1fr 1fr !important;
   align-items: center !important;
@@ -823,7 +851,8 @@ a.btn.header-misc__link.header-misc__link--register,
 
 .mwtoto-counter-label {
   margin-bottom: 4px !important;
-  color: #b8c0d5 !important;
+
+  color: #c7cbd2 !important;
   font-size: 12px !important;
   line-height: 1.2 !important;
   font-weight: 700 !important;
@@ -836,28 +865,32 @@ a.btn.header-misc__link.header-misc__link--register,
   line-height: 1.2 !important;
   font-weight: 900 !important;
   white-space: nowrap !important;
+
   text-shadow:
-    0 1px 2px rgba(0,0,0,.95),
-    0 0 7px rgba(255,255,255,.20) !important;
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 7px rgba(255, 255, 255, 0.16) !important;
 }
 
 .mwtoto-counter-minus {
-  color: #ff303d !important;
+  color: #ff3535 !important;
+
   text-shadow:
-    0 1px 2px rgba(0,0,0,.95),
-    0 0 8px rgba(255,0,35,.38) !important;
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 8px rgba(255, 0, 0, 0.48) !important;
 }
 
 .mwtoto-counter-divider {
   position: relative !important;
   z-index: 2 !important;
+
   width: 100% !important;
   height: 1px !important;
   margin: 12px 0 9px !important;
+
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(95,131,205,.55),
+    rgba(215, 220, 228, 0.42),
     transparent
   ) !important;
 }
@@ -865,12 +898,15 @@ a.btn.header-misc__link.header-misc__link--register,
 .mwtoto-online-dot,
 .counter-prize .fa-circle {
   margin-right: 6px !important;
+
   color: #31ff54 !important;
   font-size: 11px !important;
+
   filter:
     drop-shadow(0 0 4px #31ff54)
-    drop-shadow(0 0 8px rgba(49,255,84,.75)) !important;
-  animation: mwtotoOnlinePulse .8s ease-in-out infinite alternate !important;
+    drop-shadow(0 0 7px rgba(49, 255, 84, 0.68)) !important;
+
+  animation: mwtotoOnlinePulse 0.9s ease-in-out infinite alternate !important;
 }
 
 .counter-prize .count,
@@ -880,23 +916,34 @@ a.btn.header-misc__link.header-misc__link--register,
 }
 
 @keyframes mwtotoCounterShine {
-  0% { left: -55%; }
-  100% { left: 125%; }
+  0% {
+    left: -55%;
+  }
+
+  100% {
+    left: 125%;
+  }
 }
 
 @keyframes mwtotoCounterStars {
-  from { opacity: .06; }
-  to { opacity: .22; }
+  from {
+    opacity: 0.05;
+  }
+
+  to {
+    opacity: 0.17;
+  }
 }
 
 @keyframes mwtotoOnlinePulse {
   from {
-    opacity: .45;
-    transform: scale(.82);
+    opacity: 0.45;
+    transform: scale(0.82);
   }
+
   to {
     opacity: 1;
-    transform: scale(1.2);
+    transform: scale(1.18);
   }
 }
 
