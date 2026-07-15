@@ -983,3 +983,48 @@ a.btn.header-misc__link.header-misc__link--register,
   fill: #f1f3f6 !important;
   stroke: #f1f3f6 !important;
 }
+/* ===== FIX COUNTER JANGAN PUTIH ===== */
+.counter-prize {
+  background:
+    radial-gradient(circle at 50% 0%, rgba(255, 0, 0, 0.28), transparent 58%),
+    linear-gradient(145deg, #330000 0%, #120202 55%, #050000 100%) !important;
+
+  border: 1px solid rgba(255, 0, 0, 0.75) !important;
+
+  box-shadow:
+    0 0 10px rgba(255, 0, 0, 0.75),
+    0 0 22px rgba(150, 0, 0, 0.55),
+    inset 0 1px 0 rgba(255, 0, 0, 0.28),
+    inset 0 0 18px rgba(255, 0, 0, 0.18) !important;
+}
+
+.counter-prize::before {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 0, 0, 0.05),
+    rgba(255, 80, 80, 0.45),
+    rgba(255, 0, 0, 0.05),
+    transparent
+  ) !important;
+}
+
+.mwtoto-counter-label {
+  color: #d6d6d6 !important;
+}
+
+.mwtoto-counter-value {
+  color: #f3f3f3 !important;
+  text-shadow:
+    0 1px 2px rgba(0, 0, 0, 0.95),
+    0 0 7px rgba(255, 0, 0, 0.22) !important;
+}
+
+.mwtoto-counter-divider {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 0, 0, 0.55),
+    transparent
+  ) !important;
+}
