@@ -985,8 +985,9 @@ a.btn.header-misc__link.header-misc__link--register,
 }
 /* ===== PAKSA TOTAL DIMENANGKAN JADI HIJAU ===== */
 .counter-prize .mwtoto-counter-value.mwtoto-counter-menang,
+.counter-prize .mwtoto-counter-value.mwtoto-counter-menang *,
 .counter-prize .mwtoto-counter-value.mwtoto-counter-menang span,
-#totalDimenangkanPlayer {
+.counter-prize #totalDimenangkanPlayer {
   color: #31ff54 !important;
 
   text-shadow:
