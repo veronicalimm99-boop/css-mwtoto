@@ -744,126 +744,156 @@ a.btn.header-misc__link.header-misc__link--register,
 }
 
 /* ==================================================
-   COUNTER PRIZE — RANDOM COUNT + BLING-BLING
+   COUNTER PRIZE — 4 DATA + CYAN NEON + BLING-BLING
 ================================================== */
 
 .counter-prize {
   position: relative !important;
+  display: block !important;
+  width: 325px !important;
+  max-width: 100% !important;
+  padding: 12px 14px !important;
   overflow: hidden !important;
   isolation: isolate !important;
-
+  box-sizing: border-box !important;
   background:
-    radial-gradient(circle at 18% 25%, rgba(255,255,255,.30), transparent 10%),
-    radial-gradient(circle at 82% 72%, rgba(255,255,255,.20), transparent 12%),
-    linear-gradient(135deg, #ff0000 0%, #080808 48%, #ff0000 100%) !important;
-
-  border: 1px solid rgba(255,255,255,.82) !important;
-  border-radius: 12px !important;
-
+    radial-gradient(circle at 50% 0%, rgba(36,91,157,.32), transparent 60%),
+    linear-gradient(145deg, #101c45 0%, #071330 55%, #050d24 100%) !important;
+  border: 2px solid #26ffff !important;
+  border-radius: 17px !important;
   box-shadow:
-    0 0 12px rgba(255,0,0,.55),
-    0 0 24px rgba(255,255,255,.16),
-    inset 0 1px 0 rgba(255,255,255,.42),
-    inset 0 0 18px rgba(255,0,0,.24) !important;
+    0 0 8px rgba(38,255,255,.95),
+    0 0 20px rgba(0,229,255,.65),
+    inset 0 1px 0 rgba(255,255,255,.45),
+    inset 0 0 20px rgba(0,153,255,.14) !important;
 }
 
 .counter-prize::before {
   content: "" !important;
   position: absolute !important;
-  top: -90% !important;
-  left: -45% !important;
-  width: 38% !important;
-  height: 280% !important;
-
+  top: -100% !important;
+  left: -55% !important;
+  width: 34% !important;
+  height: 300% !important;
   background: linear-gradient(
     90deg,
-    transparent 0%,
-    rgba(255,255,255,.05) 25%,
-    rgba(255,255,255,.85) 50%,
-    rgba(255,255,255,.05) 75%,
-    transparent 100%
+    transparent,
+    rgba(255,255,255,.08),
+    rgba(116,255,255,.52),
+    rgba(255,255,255,.08),
+    transparent
   ) !important;
-
   transform: rotate(20deg) !important;
-  filter: blur(1px) !important;
-
-  animation: counterPrizeKilau 3.2s linear infinite !important;
-
+  animation: mwtotoCounterShine 3.5s linear infinite !important;
   pointer-events: none !important;
-  z-index: 0 !important;
+  z-index: 1 !important;
 }
 
 .counter-prize::after {
   content: "" !important;
   position: absolute !important;
   inset: 0 !important;
-
   background-image:
-    radial-gradient(circle, rgba(255,255,255,.95) 0 1px, transparent 2px),
-    radial-gradient(circle, rgba(255,215,0,.75) 0 1px, transparent 2px) !important;
-
+    radial-gradient(circle, rgba(255,255,255,.80) 0 1px, transparent 2px),
+    radial-gradient(circle, rgba(38,255,255,.65) 0 1px, transparent 2px) !important;
   background-size: 34px 34px, 52px 52px !important;
   background-position: 0 0, 17px 13px !important;
-
-  opacity: .18 !important;
-  animation: counterPrizeBintang 1.6s ease-in-out infinite alternate !important;
-
+  opacity: .15 !important;
+  animation: mwtotoCounterStars 1.6s ease-in-out infinite alternate !important;
   pointer-events: none !important;
-  z-index: 0 !important;
+  z-index: 1 !important;
 }
 
-.counter-prize__item {
+.mwtoto-counter-row {
   position: relative !important;
   z-index: 2 !important;
+  display: grid !important;
+  grid-template-columns: 1fr 1fr !important;
+  align-items: center !important;
+  gap: 12px !important;
 }
 
-/* Mendukung HTML lama (.count) dan class baru (.counter-number) */
+.mwtoto-counter-item {
+  min-width: 0 !important;
+}
+
+.mwtoto-counter-right {
+  text-align: right !important;
+}
+
+.mwtoto-counter-label {
+  margin-bottom: 4px !important;
+  color: #b8c0d5 !important;
+  font-size: 12px !important;
+  line-height: 1.2 !important;
+  font-weight: 700 !important;
+  white-space: nowrap !important;
+}
+
+.mwtoto-counter-value {
+  color: #ffffff !important;
+  font-size: 15px !important;
+  line-height: 1.2 !important;
+  font-weight: 900 !important;
+  white-space: nowrap !important;
+  text-shadow:
+    0 1px 2px rgba(0,0,0,.95),
+    0 0 7px rgba(255,255,255,.20) !important;
+}
+
+.mwtoto-counter-minus {
+  color: #ff303d !important;
+  text-shadow:
+    0 1px 2px rgba(0,0,0,.95),
+    0 0 8px rgba(255,0,35,.38) !important;
+}
+
+.mwtoto-counter-divider {
+  position: relative !important;
+  z-index: 2 !important;
+  width: 100% !important;
+  height: 1px !important;
+  margin: 12px 0 9px !important;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(95,131,205,.55),
+    transparent
+  ) !important;
+}
+
+.mwtoto-online-dot,
+.counter-prize .fa-circle {
+  margin-right: 6px !important;
+  color: #31ff54 !important;
+  font-size: 11px !important;
+  filter:
+    drop-shadow(0 0 4px #31ff54)
+    drop-shadow(0 0 8px rgba(49,255,84,.75)) !important;
+  animation: mwtotoOnlinePulse .8s ease-in-out infinite alternate !important;
+}
+
 .counter-prize .count,
 .counter-prize .counter-number {
   display: inline-block !important;
-  color: #ffffff !important;
-
-  text-shadow:
-    0 0 4px rgba(255,255,255,.95),
-    0 0 10px rgba(255,0,0,.85),
-    0 0 16px rgba(255,215,0,.40) !important;
+  color: inherit !important;
 }
 
-.counter-prize .fa-circle {
-  color: #31ff6a !important;
-  font-size: 8px !important;
-  margin-right: 5px !important;
-
-  filter: drop-shadow(0 0 5px #31ff6a) !important;
-  animation: counterOnlinePulse .9s ease-in-out infinite alternate !important;
+@keyframes mwtotoCounterShine {
+  0% { left: -55%; }
+  100% { left: 125%; }
 }
 
-@keyframes counterPrizeKilau {
-  0% {
-    left: -45%;
-  }
-
-  100% {
-    left: 125%;
-  }
+@keyframes mwtotoCounterStars {
+  from { opacity: .06; }
+  to { opacity: .22; }
 }
 
-@keyframes counterPrizeBintang {
-  from {
-    opacity: .08;
-  }
-
-  to {
-    opacity: .30;
-  }
-}
-
-@keyframes counterOnlinePulse {
+@keyframes mwtotoOnlinePulse {
   from {
     opacity: .45;
-    transform: scale(.85);
+    transform: scale(.82);
   }
-
   to {
     opacity: 1;
     transform: scale(1.2);
