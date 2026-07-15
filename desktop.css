@@ -871,12 +871,12 @@ a.btn.header-misc__link.header-misc__link--register,
     0 0 7px rgba(255, 255, 255, 0.16) !important;
 }
 
-.mwtoto-counter-minus {
-  color: #ff3535 !important;
+.mwtoto-counter-menang {
+  color: #31ff54 !important;
 
   text-shadow:
     0 1px 2px rgba(0, 0, 0, 0.95),
-    0 0 8px rgba(255, 0, 0, 0.48) !important;
+    0 0 8px rgba(49, 255, 84, 0.55) !important;
 }
 
 .mwtoto-counter-divider {
