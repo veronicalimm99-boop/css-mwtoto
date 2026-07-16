@@ -472,11 +472,16 @@
   }
 
   /* ===== NAIKKAN POSISI LIVE CHAT MOBILE ===== */
-iframe#chat-widget-minimized,
-iframe[id*="chat-widget-minimized"],
-iframe#chat-widget-maximized,
-iframe[id*="chat-widget-maximized"] {
-  bottom: 20px !important;
-  transform: translateY(-155px) !important;
+iframe#chat-widget-minimized {
+  position: fixed !important;
+  right: 14px !important;
+  bottom: 155px !important;
+  z-index: 2147483647 !important;
+}
+
+iframe#chat-widget-maximized {
+  position: fixed !important;
+  right: 10px !important;
+  bottom: 90px !important;
   z-index: 2147483647 !important;
 }
