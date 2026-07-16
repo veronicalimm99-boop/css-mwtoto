@@ -415,8 +415,7 @@
     border:
       1px solid rgba(235, 238, 242, 0.62) !important;
   }
-
-  /* ===== MARQUEE ===== */
+ /* ===== MARQUEE ===== */
   .marquee {
     border:
       1px solid rgba(235, 238, 242, 0.72) !important;
@@ -426,21 +425,36 @@
       inset 0 1px 0 rgba(255, 255, 255, 0.26) !important;
   }
 
-        .marquee__msg {
-            background: linear-gradient(93deg, #FF0000 0%, #000000 35%, #FF0000 70%, #FF0000 100%) !important;
-            color: #efdfdf;
-            width: 100%;
-            padding: 5px;
-            overflow: hidden;
-            float: left;
-        }
-    }
-}
+  .marquee__msg {
+    background:
+      linear-gradient(
+        93deg,
+        #ff0000 0%,
+        #000000 35%,
+        #ff0000 70%,
+        #ff0000 100%
+      ) !important;
 
-.marquee__container {
-    background: linear-gradient(93deg, #FF0000 0%, #000000 35%, #FF0000 70%, #FF0000 100%) !important;
-    padding-left: 35px;
-}
+    color: #efdfdf !important;
+    width: 100% !important;
+    padding: 5px !important;
+    overflow: hidden !important;
+    float: left !important;
+  }
+
+  .marquee__container {
+    background:
+      linear-gradient(
+        93deg,
+        #ff0000 0%,
+        #000000 35%,
+        #ff0000 70%,
+        #ff0000 100%
+      ) !important;
+
+    padding-left: 35px !important;
+  }
+
   /* ===== FOOTER ===== */
   .footer {
     border-top:
@@ -457,10 +471,10 @@
       1px solid rgba(225, 229, 235, 0.54) !important;
   }
 
-}
+  /* ===== NAIKKAN POSISI LIVE CHAT MOBILE ===== */
+  iframe#chat-widget-minimized,
+  iframe#chat-widget-maximized {
+    bottom: 105px !important;
+  }
 
-/* ===== NAIKKAN POSISI LIVE CHAT MOBILE ===== */
-iframe#chat-widget-minimized,
-iframe#chat-widget-maximized {
-  bottom: 105px !important;
 }
