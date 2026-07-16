@@ -475,7 +475,7 @@
 iframe#chat-widget-minimized {
   position: fixed !important;
   right: 14px !important;
-  bottom: 90px !important;
+  bottom: 70px !important;
   z-index: 2147483647 !important;
 }
 
