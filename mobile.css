@@ -492,6 +492,6 @@ iframe#chat-widget-maximized {
     padding-left: 10px !important;
     padding-right: 10px !important;
     padding-bottom: 10px !important;
-    position: 120 !important;
-    bottom: 0 !important;
+    position: fixed !important;
+    bottom: -120 !important;
 }
