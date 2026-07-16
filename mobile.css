@@ -485,3 +485,13 @@ iframe#chat-widget-maximized {
   bottom: 90px !important;
   z-index: 2147483647 !important;
 }
+
+.ftoor {
+    /* border-top: 5px solid #0a0804; */
+    padding-top: 10px !important;
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+    padding-bottom: 10px !important;
+    position: 120 !important;
+    bottom: 0 !important;
+}
