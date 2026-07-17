@@ -11,14 +11,15 @@
     background:
       url("https://imgstorage.site/view/yuyu/bg-mobile-edit-1.png")
       center top / cover no-repeat !important;
-
-     .header-logo__img {
-    content: url("https://imgstorage.site/view/yuyu/mwtoto-630x189-gif-fin.gifg") !important;
+    
+  .brand-logo__img {
+    content: url("/images/header.png") !important;
     width: auto !important;
-    height: 55px !important;
-    max-width: 260px !important;
+    height: 45px !important;
+    max-width: 210px !important;
     object-fit: contain !important;
   }
+    
   } 
 
   /* ===== HILANGKAN RUANG KOSONG SEBELUM HEADER ===== */
