@@ -11,6 +11,7 @@
     background:
       url("https://imgstorage.site/view/yuyu/bg-mobile-edit-1.png")
       center top / cover no-repeat !important;
+  } 
     
 .brand-logo__link {
   display: flex !important;
@@ -43,7 +44,6 @@
   background: url("https://imgstorage.site/view/yuyu/mwtoto-630x189-gif-fin.gif") left center / contain no-repeat !important;
 }
     
-  } 
 
   /* ===== HILANGKAN RUANG KOSONG SEBELUM HEADER ===== */
   .header-before,
