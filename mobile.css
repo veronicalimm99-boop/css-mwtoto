@@ -11,39 +11,35 @@
     background:
       url("https://imgstorage.site/view/yuyu/bg-mobile-edit-1.png")
       center top / cover no-repeat !important;
-  } 
-    
-.brand-logo__link {
-  display: flex !important;
-  align-items: center !important;
-  justify-content: flex-start !important;
+  }
 
-  width: 210px !important;
-  max-width: 210px !important;
-  height: 55px !important;
+  /* ===== FIX LOGO MOBILE PAKAI GAMBAR SENDIRI ===== */
+  .brand-logo__link {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    width: 210px !important;
+    max-width: 210px !important;
+    height: 55px !important;
+    background: transparent !important;
+    overflow: visible !important;
+  }
 
-  background: transparent !important;
-  overflow: visible !important;
-}
+  .brand-logo__img {
+    display: none !important;
+    visibility: hidden !important;
+    opacity: 0 !important;
+    width: 0 !important;
+    height: 0 !important;
+  }
 
-.brand-logo__img {
-  display: none !important;
-  visibility: hidden !important;
-  opacity: 0 !important;
-  width: 0 !important;
-  height: 0 !important;
-}
-
-.brand-logo__link::before {
-  content: "" !important;
-  display: block !important;
-
-  width: 210px !important;
-  height: 55px !important;
-
-  background: url("https://imgstorage.site/view/yuyu/mwtoto-630x189-gif-fin.gif") left center / contain no-repeat !important;
-}
-    
+  .brand-logo__link::before {
+    content: "" !important;
+    display: block !important;
+    width: 210px !important;
+    height: 55px !important;
+    background: url("https://imgstorage.site/view/yuyu/mwtoto-630x189-gif-fin.gif") left center / contain no-repeat !important;
+  }
 
   /* ===== HILANGKAN RUANG KOSONG SEBELUM HEADER ===== */
   .header-before,
