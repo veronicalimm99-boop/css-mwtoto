@@ -8,10 +8,19 @@
   }
 
 body::before {
+  content: "" !important;
+  display: block !important;
+  position: fixed !important;
+  inset: 0 !important;
+  width: 100% !important;
+  height: 100% !important;
+
   background:
     url("https://imgstorage.site/view/yuyu/bg-mobile-edit-1.webp")
-    center top / 100% auto no-repeat !important;
-}
+    center top / cover no-repeat !important;
+
+  z-index: -1 !important;
+  poin
 
   /* ===== FIX LOGO MOBILE PAKAI GAMBAR SENDIRI ===== */
   .brand-logo__link {
