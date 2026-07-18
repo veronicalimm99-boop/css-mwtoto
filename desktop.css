@@ -2,8 +2,8 @@
 body {
   background:
     #ffffff
-    url("https://imgstorage.site/view/yuyu/bgfix-1.webp")
-    center center / cover no-repeat fixed !important;
+    url("https://imgstorage.site/view/yuyu/bgfix.webp")
+    center top / 100% auto no-repeat fixed !important;
 }
 
 body::before {
