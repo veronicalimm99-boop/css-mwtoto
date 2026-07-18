@@ -1,6 +1,6 @@
 /* DESKTOP + CSS UMUM */
 body {
-  background: #ffffff url("https://imgstorage.site/view/yuyu/mwtoto-bg-3000x1688.jpg") center center / cover no-repeat fixed !important;
+  background: #ffffff url("https://imgstorage.site/view/yuyu/mwtoto-bg-3000x1688.webp") center center / cover no-repeat fixed !important;
 }
 
 body::before {
@@ -8,7 +8,7 @@ body::before {
   position: fixed;
   inset: 0;
 
-  background: url("https://imgstorage.site/view/yuyu/mwtoto-bg-3000x1688.jpg") center center / cover no-repeat fixed;
+  background: url("https://imgstorage.site/view/yuyu/mwtoto-bg-3000x1688.webp") center center / cover no-repeat fixed;
 
   z-index: -1;
 }
