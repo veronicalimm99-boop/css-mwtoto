@@ -22,6 +22,7 @@
     max-width: 210px !important;
     height: 55px !important;
     background: transparent !important;
+    
     overflow: visible !important;
   }
 
@@ -496,7 +497,7 @@
   height: auto !important;
 
   margin: 0 !important;
-  padding: 8px 10px !important;
+  padding: 4px 10px !important;
 
   background: #2a1b04 !important;
 
@@ -515,7 +516,7 @@
 .content-page__footer.ftoor * {
   margin-top: 0 !important;
   margin-bottom: 0 !important;
-  line-height: 20px !important;
+  line-height: 16px !important;
 }
 
 .footer-partner--item-img,
